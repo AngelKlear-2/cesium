@@ -21,6 +21,9 @@ dependency-reduced-pom.xml
 .DS_Store
 Thumbs.db
 
+# Launcher packaging output
+launcher/dist/
+
 # Launcher secrets / runtime data
 launcher/launcher.properties
 accounts.json
