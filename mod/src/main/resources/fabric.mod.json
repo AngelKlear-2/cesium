@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "cesium",
+	"version": "${version}",
+	"name": "Cesium",
+	"description": "Cesium - 1.21.11. Modular client with an animated acid-green ClickGUI.",
+	"authors": ["AngelKlear-2"],
+	"contact": {
+		"homepage": "https://github.com/AngelKlear-2/cesium",
+		"sources": "https://github.com/AngelKlear-2/cesium"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.cesium.CesiumClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,6 @@
+# Copy this file to ~/.cesium/launcher.properties and fill in the values.
+# Register an application at https://account.ely.by/dev/applications
+# Redirect URI: http://127.0.0.1:49152/callback (any port from 49152 to 49162 works)
+# Environment variables CESIUM_ELY_CLIENT_ID / CESIUM_ELY_CLIENT_SECRET take precedence.
+ely.client_id=
+ely.client_secret=

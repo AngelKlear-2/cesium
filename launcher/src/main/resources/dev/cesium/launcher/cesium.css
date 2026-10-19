@@ -1,0 +1,215 @@
+/* Cesium - 1.21.11 launcher theme. Palette: #0A0A0A black, #B6FF00 acid green, #FFFFFF text. */
+
+.root {
+    -fx-font-family: "Bebas Neue", "Oswald", "Impact", "Arial Black", sans-serif;
+    -fx-text-fill: #FFFFFF;
+}
+
+.panel {
+    -fx-background-color: linear-gradient(to bottom right, #0A0A0A 0%, #0A0A0A 45%, #1B2A05 100%);
+    -fx-background-radius: 12;
+    -fx-border-color: #B6FF00;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(182, 255, 0, 0.25), 30, 0.2, 0, 0);
+    -fx-padding: 0;
+}
+
+.title-bar {
+    -fx-padding: 10 12 6 16;
+}
+
+.title-text {
+    -fx-font-size: 22px;
+    -fx-text-fill: #B6FF00;
+    -fx-letter-spacing: 1px;
+}
+
+.hero-text {
+    -fx-font-size: 54px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(182, 255, 0, 0.45), 18, 0.2, 0, 0);
+}
+
+.hint-text {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: #B0B0B0;
+}
+
+.status-text {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.section-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B6FF00;
+    -fx-letter-spacing: 1px;
+}
+
+.chip {
+    -fx-background-color: rgba(182, 255, 0, 0.12);
+    -fx-background-radius: 999;
+    -fx-border-color: #B6FF00;
+    -fx-border-radius: 999;
+    -fx-padding: 4 12 4 12;
+    -fx-font-size: 13px;
+    -fx-text-fill: #B6FF00;
+}
+
+.button {
+    -fx-background-color: #141414;
+    -fx-background-radius: 10;
+    -fx-border-color: #3A4A10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+    -fx-letter-spacing: 1px;
+}
+
+.button:hover {
+    -fx-border-color: #B6FF00;
+    -fx-text-fill: #B6FF00;
+    -fx-effect: dropshadow(gaussian, rgba(182, 255, 0, 0.4), 12, 0.2, 0, 0);
+}
+
+.button:pressed {
+    -fx-background-color: #B6FF00;
+    -fx-text-fill: #0A0A0A;
+}
+
+.button:disabled {
+    -fx-opacity: 0.4;
+}
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-border-color: #3A4A10;
+    -fx-border-radius: 10;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+}
+
+.toggle-button:selected {
+    -fx-background-color: linear-gradient(to right, #B6FF00, #7CB300);
+    -fx-border-color: #B6FF00;
+    -fx-text-fill: #0A0A0A;
+}
+
+.play-button {
+    -fx-background-color: linear-gradient(to right, #0A0A0A 0%, #B6FF00 100%);
+    -fx-background-radius: 12;
+    -fx-border-color: #B6FF00;
+    -fx-border-radius: 12;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 40 10 40;
+}
+
+.play-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(182, 255, 0, 0.7), 22, 0.3, 0, 0);
+    -fx-text-fill: #FFFFFF;
+}
+
+.play-button:disabled {
+    -fx-opacity: 0.45;
+}
+
+.window-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 16px;
+    -fx-padding: 2 8 2 8;
+}
+
+.text-field, .combo-box-base .text-field {
+    -fx-background-color: #0F0F0F;
+    -fx-background-radius: 10;
+    -fx-border-color: #3A4A10;
+    -fx-border-radius: 10;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #6A6A6A;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12 8 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #B6FF00;
+}
+
+.combo-box {
+    -fx-background-color: #0F0F0F;
+    -fx-background-radius: 10;
+    -fx-border-color: #3A4A10;
+    -fx-border-radius: 10;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.combo-box:focused {
+    -fx-border-color: #B6FF00;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #0F0F0F;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #0F0F0F;
+    -fx-border-color: #B6FF00;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(182, 255, 0, 0.18);
+    -fx-text-fill: #B6FF00;
+}
+
+.progress-bar {
+    -fx-accent: #B6FF00;
+    -fx-control-inner-background: #141414;
+    -fx-background-radius: 999;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(182, 255, 0, 0.35), 10, 0.2, 0, 0);
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(to right, #5E8500, #B6FF00);
+    -fx-background-radius: 999;
+    -fx-border-color: transparent;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #141414;
+    -fx-background-radius: 999;
+    -fx-border-color: #2A3A08;
+    -fx-border-radius: 999;
+}
+
+.slider .track {
+    -fx-background-color: #2A3A08;
+    -fx-background-radius: 999;
+    -fx-pref-height: 4;
+}
+
+.slider .thumb {
+    -fx-background-color: #B6FF00;
+    -fx-background-radius: 999;
+}
+
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
