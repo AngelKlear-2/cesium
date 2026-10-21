@@ -29,7 +29,7 @@ public final class BrowserOpener {
                 Desktop.getDesktop().browse(URI.create(url));
                 return true;
             }
-        } catch (IOException | RuntimeException | UnsupportedOperationException ignored) {
+        } catch (IOException | RuntimeException ignored) {
             // fall through to the next mechanism
         } catch (Throwable t) {
             if (t instanceof Error && !(t instanceof java.awt.AWTError || t instanceof LinkageError)) {
