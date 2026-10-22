@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       kver:
-        description: "kernel version (empty = latest stable from kernel.org)"
+        description: "kernel version (empty = 7.3)"
         required: false
-        default: ""
+        default: "7.3"
 
 permissions:
   contents: read

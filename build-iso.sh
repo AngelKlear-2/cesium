@@ -7,7 +7,7 @@
 # the ISO runs entirely from RAM (squashfs + live-boot). Login: cesium / the password you set.
 set -euo pipefail
 
-KVER="${KVER:-6.12}"
+KVER="${KVER:-7.3}"
 SUITE="${SUITE:-noble}"
 MIRROR="${MIRROR:-http://archive.ubuntu.com/ubuntu}"
 WORK="${WORK:-$PWD/cesium-build}"
