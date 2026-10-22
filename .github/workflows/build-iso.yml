@@ -29,10 +29,7 @@ jobs:
         id: kver
         run: |
           V="${{ inputs.kver }}"
-          if [ -z "$V" ]; then
-            V="$(curl -fsSL https://www.kernel.org/finger_banner | grep -oP 'latest stable version of the Linux kernel is:\s*\K[0-9.]+' | head -1)"
-          fi
-          [ -n "$V" ] || { echo "could not resolve kernel version"; exit 1; }
+          [ -n "$V" ] || V="7.3"
           echo "kver=$V" >> "$GITHUB_OUTPUT"
           echo "building kernel $V"
 
