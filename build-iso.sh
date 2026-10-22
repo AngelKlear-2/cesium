@@ -123,7 +123,16 @@ cp "$KSRC/System.map"            "$ROOTFS/boot/System.map-$KREL"
 
 # ---------------------------------------------------------------- finish in chroot
 echo "== configure system"
-read -rsp "password for user 'cesium': " PW; echo
+# password: $CESIUM_PASSWORD if set (CI), else typed; in CI it is generated when unset
+if [[ -n "${CESIUM_PASSWORD:-}" ]]; then
+    PW="$CESIUM_PASSWORD"
+elif [[ -t 0 ]]; then
+    read -rsp "password for user 'cesium': " PW; echo
+else
+    PW="$(head -c 18 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 16)"
+    echo "$PW" > "$WORK/cesium-password.txt"
+    echo "   generated password saved to $WORK/cesium-password.txt"
+fi
 [[ -n "$PW" ]] || die "empty password"
 
 chroot "$ROOTFS" /bin/bash -e <<CHROOT
